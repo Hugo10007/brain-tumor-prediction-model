@@ -1,0 +1,15 @@
+There need to be multiple steps taken if this AI changes directory or computer.
+Here are the steps to take below in the event of a directory change:
+
+
+0. Import necessary modules using this command below (windows):
+   pip install torch torchvision timm scikit-learn pandas pillow albumentations
+	
+
+1. Open "label generator testing set.py" & "label generator training set..py" and change the "TRAIN_ROOT" variable to the directory of the training/testing dataset.
+
+2. Re-run the "label generator testing set" & "label generator training set". 2 new files should be created in the training and testing folder, both named "labels.csv"
+
+3. Open vit_train.py and changed the variable DATA_CSV to the directory of the TRAINING labels.
+
+4. Change the variable MODEL_DIR to a directory of your choice, this is where the model training data will be kept in a file called "best_vit.pth"
